@@ -1,0 +1,17 @@
+def double_even_digits(string):
+  res=""
+  for i in string:
+    if int(i)%2==0:
+      res+=i*2
+    else:
+      res+=i
+   return res
+while True:
+  try:
+    n=input()
+  except EOFError:
+    break
+  res=double_even_digits(n)
+  print(res)
+  
+
