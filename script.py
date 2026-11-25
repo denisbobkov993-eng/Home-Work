@@ -1,0 +1,13 @@
+def count_of_perfect(numbers):
+    count=0
+    for i in numbers:
+        if int(i**0.5) **2 == i:
+            count += 1
+    return count
+while True:
+    try:
+        n=input()
+    except EOFError:
+        break
+    numbers = list(map(int, n.split()))
+    print(count_of_perfect(numbers))
