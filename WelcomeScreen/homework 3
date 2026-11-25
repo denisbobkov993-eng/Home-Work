@@ -11,7 +11,7 @@ while True:
     n=input()
   except EOFError:
     break
-  res=double_even_digits(n)
-  print(res)
+  result=double_even_digits(string)
+  print(result)
   
 
